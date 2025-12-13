@@ -9,5 +9,6 @@ public class _02_DataTypes {
         System.out.println(true);
         System.out.println(false);
         System.out.println(12+12);
+        System.out.println(12-10);
     }
 }
