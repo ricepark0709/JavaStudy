@@ -30,15 +30,13 @@ public class _04_MultiArrayLoop {
         }
 
         String[][] seats3 = new String[10][15];
-        String[] eng = {"A","B","C","D","E","F","G","H","I","J"};
+        char ch = 'A';
         for (int i = 0; i < seats3.length; i++) {
             for (int j = 0; j < seats3[i].length; j++) {
-                seats3[i][j] = eng[i] + (j + 1);
+                seats3[i][j] = String.valueOf(ch) + (j + 1);
             }
+            ch++;
         }
-
-        seats3[7][8] = "__";
-        seats3[7][9] = "___";
 
         for (int i = 0; i < seats3.length; i++) {
             for (int j = 0; j < seats3[i].length; j++) {
