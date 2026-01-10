@@ -7,12 +7,12 @@ public class _05_Overloading {
     }
 
 
-    public static int getPowerStr(String strNumber) {
+    public static int getPower(String strNumber) {
         int number = Integer.parseInt(strNumber);
         return number * number;
     }
 
-    public static int getPowerByExp(int number, int exponent) {
+    public static int getPower(int number, int exponent) {
         int result = 1;
         for (int i = 0; i < exponent; i++) {
             result *= number;
@@ -22,6 +22,7 @@ public class _05_Overloading {
 
     public static void main(String[] args) {
         System.out.println(getPower(3));
-        System.out.println(getPowerStr("4"));
+        System.out.println(getPower("4"));
+        System.out.println(getPower(3,4));
     }
 }
